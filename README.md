@@ -1,0 +1,1 @@
+This project is one of the challenges from frontend end mentor. It is a multi-step form where a user selects a particular service plan for subscription. The projects was done using html5, tailwindcss and javascript.
