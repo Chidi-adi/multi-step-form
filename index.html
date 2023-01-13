@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-step Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/output.css" rel="stylesheet" />
+    <script src="main.js" defer></script>
+  </head>
+  <body class="font-ubuntu">
+    <!-------------Entire container------------->
+    <div
+      class="container relative flex flex-col p-4 pb-36 bg-magnolia mx-auto md:flex-row md:justify-center md:items-center md:h-screen md:pb-0"
+    >
+      <!------------mobile background image--------->
+      <div class="bg-img-mobile absolute md:hidden"></div>
+      <!------------mobile header---------------->
+      <div
+        class="header z-10 flex flex-row w-1/2 mx-auto my-12 justify-between md:hidden"
+      >
+        <div
+          class="flex rounded-full w-9 h-9 bg-lightGray text-marineBlue justify-center items-center text-sm font-bold"
+        >
+          1
+        </div>
+        <div
+          class="flex rounded-full w-9 h-9 bg-transparent border-white border text-white justify-center items-center text-sm font-bold"
+        >
+          2
+        </div>
+        <div
+          class="flex rounded-full w-9 h-9 bg-transparent border-white border text-white justify-center items-center text-sm font-bold"
+        >
+          3
+        </div>
+        <div
+          class="flex rounded-full w-9 h-9 bg-transparent border-white border text-white justify-center items-center text-sm font-bold"
+        >
+          4
+        </div>
+      </div>
+      <!--end of header-->
+      <!------------card------------------>
+      <div
+        class="card flex flex-col p-2 rounded-lg mx-auto max-w-sm z-10 bg-white md:flex-row md:max-w-screen-md md:pr-6"
+      >
+        <!------------desktop side bar------------>
+        <div class="sideBar hidden w-1/3 m-3 mr-6 pr-8 md:block rounded-lg">
+          <!--side bar content-->
+          <div class="sideBarContent flex flex-col mt-6 p-4">
+            <!-----step 1----->
+            <div class="step1 flex flex-row mx-2 mb-6">
+              <div
+                class="flex rounded-full w-9 h-9 bg-lightBlue text-marineBlue justify-center items-center text-sm font-bold"
+              >
+                1
+              </div>
+              <div class="step1-text ml-3">
+                <p class="text-sm text-coolGray">STEP 1</p>
+                <p class="text-sm text-magnolia font-medium">YOUR INFO</p>
+              </div>
+            </div>
+            <!--end of step 1-->
+
+            <!-----step 2----->
+            <div class="step1 flex flex-row mx-2 mb-6">
+              <div
+                class="flex rounded-full w-9 h-9 bg-transparent border-magnolia border text-magnolia justify-center items-center text-sm font-bold"
+              >
+                2
+              </div>
+              <div class="step1-text ml-3">
+                <p class="text-sm text-coolGray">STEP 2</p>
+                <p class="text-sm text-magnolia font-medium">SELECT PLAN</p>
+              </div>
+            </div>
+            <!--end of step 2-->
+
+            <!-----step 3----->
+            <div class="step1 flex flex-row mx-2 mb-6">
+              <div
+                class="flex rounded-full w-9 h-9 bg-transparent border-magnolia border text-magnolia justify-center items-center text-sm font-bold"
+              >
+                3
+              </div>
+              <div class="step1-text ml-3">
+                <p class="text-sm text-coolGray">STEP 3</p>
+                <p class="text-sm text-magnolia font-medium">ADD ONS</p>
+              </div>
+            </div>
+            <!--end of step 3-->
+
+            <!-----step 4----->
+            <div class="step1 flex flex-row mx-2 mb-6">
+              <div
+                class="flex rounded-full w-9 h-9 bg-transparent border-magnolia border text-magnolia justify-center items-center text-sm font-bold"
+              >
+                4
+              </div>
+              <div class="step1-text ml-3">
+                <p class="text-sm text-coolGray">STEP 4</p>
+                <p class="text-sm text-magnolia font-medium">SUMMARY</p>
+              </div>
+            </div>
+            <!--end of step 1-->
+          </div>
+          <!--end of side bar content-->
+        </div>
+        <!--end of desktop side bar-->
+
+        <!------------form------------->
+        <form action="" class="m-6 flex flex-col md:w-2/3">
+          <h1 class="text-marineBlue font-bold text-3xl mb-2">Personal info</h1>
+          <p class="text-base text-coolGray font-medium mb-5 leading-7">
+            Please provide your name, email address, and phone number.
+          </p>
+
+          <label for="name" class="text-sm text-marineBlue font-medium"
+            >Name</label
+          >
+          <input
+            type="text"
+            placeholder="e.g. Stephen King"
+            class="text-coolGray text-md p-2 px-4 font-bold border-coolGray border w-full rounded-md focus:border focus:border-purplishBlue focus:outline-none mb-6 md:text-base md:p-3"
+          />
+
+          <label for="email" class="text-sm text-marineBlue font-medium"
+            >Email Address</label
+          >
+          <input
+            type="email"
+            placeholder="e.g. stephenking@lorem.com"
+            class="text-coolGray text-md p-2 px-4 font-bold border-coolGray border w-full rounded-md focus:border focus:border-purplishBlue focus:outline-none mb-6 md:text-base md:p-3"
+          />
+
+          <label for="phoneNumber" class="text-sm text-marineBlue font-medium"
+            >Phone Number</label
+          >
+          <input
+            required
+            type="tel"
+            placeholder="e.g. +1 234 567 890"
+            class="text-coolGray text-md p-2 px-4 font-bold border-coolGray border w-full rounded-md focus:border focus:border-purplishBlue focus:outline-none mb-6 md:text-base md:p-3"
+          />
+
+          <!--form button desktop-->
+          <div class="hidden justify-end md:flex">
+            <button
+              class="px-5 py-2 font-medium text-white text-sm bg-marineBlue rounded-md mt-12 mb-2 duration-300 hover:scale-105 md:text-base md:px-6 md:py-3"
+            >
+              Next Step
+            </button>
+          </div>
+          <!--end of form button desktop`-->
+        </form>
+        <!--end of form-->
+      </div>
+      <!--end of card-->
+    </div>
+    <!--end of container-->
+    <!--form button mobile-->
+    <div class="flex justify-end md:hidden">
+      <button
+        class="px-5 py-2 font-medium text-white text-sm bg-marineBlue rounded-md mt-12 mb-2 mr-6 focus:outline-none md:text-base md:px-6 md:py-3"
+      >
+        Next Step
+      </button>
+    </div>
+    <!--end of form button mobile-->
+  </body>
+</html>
