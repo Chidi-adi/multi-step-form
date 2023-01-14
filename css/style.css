@@ -1,0 +1,386 @@
+:root {
+  --marineBlue: hsl(213, 96%, 18%);
+  --purplishBlue: hsl(243, 100%, 62%);
+  --pastelBlue: hsl(228, 100%, 84%);
+  --lightBlue: hsl(206, 94%, 87%);
+  --strawberryRed: hsl(354, 84%, 57%);
+  --coolGray: hsl(231, 11%, 63%);
+  --lightGray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ubuntu", sans-serif;
+  outline: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/******************container********************/
+.container {
+  max-width: 1440px;
+  height: 100vh;
+  z-index: -1;
+  margin: auto;
+}
+
+.container-inner {
+  background: var(--lightBlue);
+  width: 100%;
+  height: 85vh;
+  padding: 0.1rem 0.5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBar-mobile {
+  background: url("../images/bg-sidebar-mobile.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.navBar-mobile-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.sideBar-desktop {
+  display: none;
+}
+
+.bar-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.bar-text p:first-child {
+  color: var(--pastelBlue);
+}
+
+.bar-text p:last-child {
+  color: var(--magnolia);
+  font-weight: 500;
+}
+
+.bar-number {
+  border: 1px solid var(--magnolia);
+  border-radius: 50%;
+  padding: 5px;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--magnolia);
+}
+
+.active-bar {
+  background: var(--lightBlue);
+  border: 1px solid var(--lightBlue);
+  color: var(--marineBlue);
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  background: var(--white);
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+#form1 {
+  display: none;
+}
+
+.form {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  display: ;
+}
+
+.form h1 {
+  margin-bottom: 1rem;
+  color: var(--marineBlue);
+}
+
+.form p {
+  color: var(--coolGray);
+}
+
+.label {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.label.first {
+  margin-top: 2rem;
+}
+
+.label div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-right: 0.5rem;
+  color: var(--marineBlue);
+  font-weight: 500;
+}
+
+#alert {
+  font-size: 0.97rem;
+}
+
+.label input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.8rem 0.5rem;
+  margin-top: 0.2rem;
+  border: 0.1rem solid var(--coolGray);
+  border-radius: 0.3rem;
+}
+
+.label input:focus {
+  border: 0.1rem solid var(--purplishBlue);
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.button {
+  margin: 6rem 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-mobile {
+  margin: 2rem 1rem 0;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--magnolia);
+  background: var(--marineBlue);
+  padding: 0.9rem 1.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: 200ms ease-in-out;
+}
+
+.button-desktop {
+  display: none;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/************* page 2 *******************/
+
+#form2 {
+  display: ;
+}
+
+.available-plans {
+  margin: 1rem 0 0 0;
+}
+
+.select-plan {
+  display: flex;
+  border: 0.15rem solid var(--lightGray);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  gap: 1rem;
+  margin: 0.3rem 0;
+  cursor: pointer;
+}
+
+.select-plan-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.select-plan-text h4 {
+  color: var(--coolGray);
+}
+
+.monthly-yearly {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: var(--magnolia);
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  color: var(--marineBlue);
+}
+
+.monthly-yearly-toggle {
+  background: var(--marineBlue);
+  border-radius: 1rem;
+  height: 1.5rem;
+  width: 3rem;
+  display: flex;
+  padding: 0 0.3rem;
+  align-items: center;
+  justify-content: flex-end;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.monthly-yearly-toggle-inner {
+  background: var(--magnolia);
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+}
+
+/************* page 3 *******************/
+
+.available-add-ons {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-add-on {
+  display: flex;
+  border: 0.15rem solid var(--lightGray);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  gap: 1rem;
+  margin: 1.5rem 0 0;
+  cursor: pointer;
+}
+
+.select-add-on input {
+  width: 2.5rem;
+  accent-color: var(--purplishBlue);
+}
+
+:acce .select-add-on-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/************* For mobile: *******************/
+@media (max-width: 400px) {
+  * {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 0.5rem 1rem;
+    margin-top: 3rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .label input {
+    padding: 0.4rem;
+  }
+
+  .select-plan-text {
+    gap: 0.15rem;
+  }
+
+  .label.first {
+    margin-top: 0.6rem;
+  }
+}
+
+/* ************* For desktop: ****************/
+@media (min-width: 768px) {
+  .h-1 {
+    height: 100vh;
+  }
+
+  .sideBar-desktop {
+    background: url("../images/bg-sidebar-desktop.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    border-radius: 0.4rem;
+    padding: 2rem 1rem;
+  }
+
+  .sideBar {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    align-items: center;
+  }
+
+  .navBar-mobile {
+    display: none;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    height: ;
+    width: 768px;
+  }
+  .button-desktop {
+    display: flex;
+  }
+
+  .btn {
+    padding: 1rem 2rem;
+  }
+
+  .available-plans {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+
+  .select-plan {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .select-plan img {
+    width: 2rem;
+  }
+}
+
+/* ************* javascript classes ****************/
+
+.hide {
+  display: none;
+}
