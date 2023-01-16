@@ -29,6 +29,46 @@ a {
   text-decoration: none;
 }
 
+.button {
+  margin: 6rem 0 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.two-buttons {
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.button-mobile {
+  margin: 1rem 1rem 0;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--magnolia);
+  background: var(--marineBlue);
+  padding: 0.9rem 1.8rem;
+  border: none;
+  border-radius: 0.5rem;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.button-desktop {
+  display: none;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-back {
+  background: transparent;
+  color: var(--coolGray);
+}
+
 /******************container********************/
 .container {
   max-width: 1440px;
@@ -45,7 +85,6 @@ a {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .navBar-mobile {
@@ -112,7 +151,9 @@ a {
   background: var(--white);
   padding: 1rem 1rem;
   border-radius: 0.5rem;
-  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  height: 70%;
+  top: 15%;
 }
 
 #form1 {
@@ -123,7 +164,6 @@ a {
   margin: 1rem;
   display: flex;
   flex-direction: column;
-  display: ;
 }
 
 .form h1 {
@@ -172,35 +212,6 @@ a {
 
 ::placeholder {
   color: rgba(0, 0, 0, 0.3);
-}
-
-.button {
-  margin: 6rem 0 0;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.button-mobile {
-  margin: 2rem 1rem 0;
-}
-
-.btn {
-  font-size: 1rem;
-  font-weight: 500;
-  color: var(--magnolia);
-  background: var(--marineBlue);
-  padding: 0.9rem 1.8rem;
-  border: none;
-  border-radius: 0.5rem;
-  transition: 200ms ease-in-out;
-}
-
-.button-desktop {
-  display: none;
-}
-
-.btn:hover {
-  transform: scale(1.05);
 }
 
 /************* page 2 *******************/
@@ -280,6 +291,11 @@ a {
   gap: 1rem;
   margin: 1.5rem 0 0;
   cursor: pointer;
+  align-items: center;
+}
+
+.select-add-on h4 {
+  color: var(--purplishBlue);
 }
 
 .select-add-on input {
@@ -287,10 +303,84 @@ a {
   accent-color: var(--purplishBlue);
 }
 
-:acce .select-add-on-text {
+.select-add-on-text {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+}
+
+/************* page 4 *******************/
+
+.finishing-up {
+  display: flex;
+  flex-direction: column;
+  background: var(--magnolia);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.finishing-up hr {
+  border: 0.1rem solid var(--lightGray);
+}
+
+.selected-package {
+  display: flex;
+  padding: 1rem 0;
+  gap: 1rem;
+  margin: 0rem 0 0;
+  align-items: center;
+}
+
+.selected-package a {
+  text-decoration: underline;
+  color: var(--coolGray);
+  font-weight: 500;
+}
+
+.selected-package h4 {
+  color: var(--marineBlue);
+}
+
+.selected-package:not(:first-child) h4 {
+  color: var(--marineBlue);
+  font-weight: 400;
+}
+
+.selected-package-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.total-amount {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+
+.total-amount h4 {
+  color: var(--purplishBlue);
+}
+
+/************* page 5 *******************/
+.thank-you-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.thank-you-page h1 {
+  margin-top: 1.5rem;
+}
+
+.thank-you-page p {
+  line-height: 1.5;
 }
 
 /************* For mobile: *******************/
@@ -352,7 +442,6 @@ a {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
-    height: ;
     width: 768px;
   }
   .button-desktop {
