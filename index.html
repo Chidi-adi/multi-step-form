@@ -22,10 +22,18 @@
         <div class="navBar-mobile">
           <!------------mobile navBar inner---------------->
           <div class="navBar-mobile-inner">
-            <a href="#" class="bar-number active-bar">1</a>
-            <a href="#" class="bar-number">2</a>
-            <a href="#" class="bar-number">3</a>
-            <a href="#" class="bar-number">4</a>
+            <div class="sideBar sideBar-1">
+              <a href="#" class="bar-number active-bar">1</a>
+            </div>
+            <div class="sideBar sideBar-2">
+              <a href="#" class="bar-number">2</a>
+            </div>
+            <div class="sideBar sideBar-3">
+              <a href="#" class="bar-number">3</a>
+            </div>
+            <div class="sideBar sideBar-4">
+              <a href="#" class="bar-number">4</a>
+            </div>
           </div>
           <!--end of mobile navBar inner-->
         </div>
@@ -37,8 +45,8 @@
             <!--side bar content-->
             <div class="sideBar-inner">
               <!-----step 1----->
-              <div class="sideBar">
-                <a href="#" class="bar-number active-bar">1</a>
+              <div class="sideBar sideBar-1">
+                <a class="bar-number active-bar">1</a>
                 <div class="bar-text">
                   <p>STEP 1</p>
                   <p>YOUR INFO</p>
@@ -47,8 +55,8 @@
               <!--end of step 1-->
 
               <!-----step 2----->
-              <div class="sideBar">
-                <a href="#" class="bar-number">2</a>
+              <div class="sideBar sideBar-2">
+                <a class="bar-number">2</a>
                 <div class="bar-text">
                   <p>STEP 2</p>
                   <p>SELECT PLAN</p>
@@ -57,8 +65,8 @@
               <!--end of step 2-->
 
               <!-----step 3----->
-              <div class="sideBar">
-                <a href="#" class="bar-number">3</a>
+              <div class="sideBar sideBar-3">
+                <a class="bar-number">3</a>
                 <div class="bar-text">
                   <p>STEP 3</p>
                   <p>ADD ONS</p>
@@ -67,8 +75,8 @@
               <!--end of step 3-->
 
               <!-----step 4----->
-              <div class="sideBar">
-                <a href="#" class="bar-number">4</a>
+              <div class="sideBar sideBar-4">
+                <a class="bar-number">4</a>
                 <div class="bar-text">
                   <p>STEP 4</p>
                   <p>SUMMARY</p>
@@ -118,7 +126,7 @@
 
             <!--form1 button desktop-->
             <div class="button button-desktop">
-              <button class="btn btn1">Next Step</button>
+              <button class="btn next btn-next-1">Next Step</button>
             </div>
             <!--end of form1 button desktop-->
           </form>
@@ -171,8 +179,8 @@
 
             <!--form2 button desktop-->
             <div class="button two-buttons button-desktop">
-              <button class="btn btn-back btn-back-3">Go Back</button>
-              <button class="btn btn-next-3">Next Step</button>
+              <button class="btn btn-back btn-back-2">Go Back</button>
+              <button class="btn next btn-next-2">Next Step</button>
             </div>
             <!--end of form2 button desktop-->
           </form>
@@ -229,14 +237,14 @@
             <!--form3 button desktop-->
             <div class="button two-buttons button-desktop">
               <button class="btn btn-back btn-back-3">Go Back</button>
-              <button class="btn btn-next-3">Next Step</button>
+              <button class="btn next btn-next-3">Next Step</button>
             </div>
             <!--end of form3 button desktop-->
           </form>
           <!--end of form3-->
 
           <!------------form 4------------->
-          <form action="" class="hide form" id="form3">
+          <form action="" class="hide form" id="form4">
             <h1>Finishing up</h1>
             <p>Double-check everything looks OK before confirming</p>
 
@@ -276,14 +284,14 @@
             <!--form4 button desktop-->
             <div class="button two-buttons button-desktop">
               <button class="btn btn-back btn-back-4">Go Back</button>
-              <button class="btn btn-next-4">Next Step</button>
+              <button class="btn next btn-next-4">Confirm</button>
             </div>
             <!--end of form4 button desktop-->
           </form>
           <!--end of form4-->
 
           <!------------form 5------------->
-          <form action="" class="form" id="form3">
+          <form action="" class="form hide" id="form5">
             <div class="thank-you-page">
               <img src="./images/icon-thank-you.svg" alt="" />
               <h1>Thank you!</h1>
@@ -299,32 +307,6 @@
         <!--end of card-->
       </div>
       <!--end of container ineer-->
-
-      <!--form1 button mobile-->
-      <div class="hide button button-mobile page1-button">
-        <button class="btn btn1 btn-mobile">Next Step</button>
-      </div>
-      <!--end of page1 button mobile-->
-      <!--form 2 button mobile-->
-      <div class="hide button two-buttons button-mobile page2-button">
-        <button class="btn btn-back btn-back-2 btn-mobile">Go Back</button>
-        <button class="btn btn-next-2 button-mobile">Next Step</button>
-      </div>
-      <!--end of form2 button mobile-->
-
-      <!--form 3 button mobile-->
-      <div class="hide button two-buttons button-mobile page3-button">
-        <button class="btn btn-back btn-back-3 btn-mobile">Go Back</button>
-        <button class="btn btn-next-3 button-mobile">Next Step</button>
-      </div>
-      <!--end of form3 button mobile-->
-
-      <!--form 4 button mobile-->
-      <div class="button two-buttons button-mobile page4-button">
-        <button class="btn btn-back btn-back-4 btn-mobile">Go Back</button>
-        <button class="btn btn-next-4 button-mobile">Confirm</button>
-      </div>
-      <!--end of form4 button mobile-->
     </div>
     <!--end of container-->
   </body>

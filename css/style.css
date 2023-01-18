@@ -57,7 +57,7 @@ a {
 }
 
 .button-desktop {
-  display: none;
+  display: ;
 }
 
 .btn:hover {
@@ -147,23 +147,22 @@ a {
 
 .card {
   position: relative;
-  z-index: 1;
+  z-index: 9999;
   background: var(--white);
   padding: 1rem 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   height: 70%;
-  top: 15%;
+  align-self: center;
 }
 
-#form1 {
-  display: none;
-}
+/************* page 1 *******************/
 
 .form {
   margin: 1rem;
   display: flex;
   flex-direction: column;
+  transition: 400ms;
 }
 
 .form h1 {
@@ -212,6 +211,10 @@ a {
 
 ::placeholder {
   color: rgba(0, 0, 0, 0.3);
+}
+
+#form1 .button-desktop {
+  margin: 1rem 0 0;
 }
 
 /************* page 2 *******************/
@@ -290,7 +293,6 @@ a {
   padding: 1rem;
   gap: 1rem;
   margin: 1.5rem 0 0;
-  cursor: pointer;
   align-items: center;
 }
 
@@ -301,12 +303,17 @@ a {
 .select-add-on input {
   width: 2.5rem;
   accent-color: var(--purplishBlue);
+  cursor: pointer;
 }
 
 .select-add-on-text {
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
+}
+
+#form3 .button-desktop {
+  margin: 5rem 0 0;
 }
 
 /************* page 4 *******************/
@@ -373,6 +380,7 @@ a {
   height: 100%;
   width: 100%;
   margin-top: 2rem;
+  transform: translateX(0);
 }
 
 .thank-you-page h1 {
@@ -409,6 +417,55 @@ a {
   .label.first {
     margin-top: 0.6rem;
   }
+
+  .select-add-on {
+    margin: 1rem 0 0;
+  }
+
+  .select-add-on-text p {
+    font-size: small;
+  }
+}
+
+/************* For mobile: *******************/
+@media (max-width: 767px) {
+  .card {
+    width: 90%;
+  }
+
+  .button {
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 4%;
+  }
+
+  #form2 h1 {
+    margin-bottom: 0.2rem;
+  }
+
+  .available-plans {
+    margin: 0.5rem 0 0 0;
+  }
+
+  .select-plan {
+    padding: 0.5rem 1rem;
+    gap: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .select-plan-text {
+    gap: 0.5rem;
+  }
+
+  .monthly-yearly {
+    margin-top: 0.2rem;
+    padding: 0.5rem 0;
+  }
 }
 
 /* ************* For desktop: ****************/
@@ -432,6 +489,7 @@ a {
     gap: 1rem;
     margin: 2rem 0;
     align-items: center;
+    cursor: pointer;
   }
 
   .navBar-mobile {
@@ -443,9 +501,14 @@ a {
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
     width: 768px;
+    position: relative;
   }
   .button-desktop {
     display: flex;
+  }
+
+  .button-mobile {
+    display: none;
   }
 
   .btn {
@@ -472,4 +535,7 @@ a {
 
 .hide {
   display: none;
+}
+
+.show {
 }
